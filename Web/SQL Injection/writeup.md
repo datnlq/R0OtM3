@@ -35,6 +35,10 @@ Ta sử dụng tương tự các payload tương tự như trên để xác đ�
 
 
 
+
+
+
+
 ```
 1 union select 1,2,3--
 ```
@@ -46,7 +50,10 @@ Ta sử dụng tương tự các payload tương tự như trên để xác đ�
 
 
 
-### [SQL Injection - Authentication]()
+### [SQL Injection - Routed]()
+
+### [SQL Injection - File reading]()
+
 
 
 
