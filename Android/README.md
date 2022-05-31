@@ -1,3 +1,21 @@
+# Mục lục
+
+
+1	[Easy RE](#01)
+
+2	[LoopAndLoop](#02)
+
+3	[Timer](#03)
+
+4	[WantAShell](#04)
+
+5	[mobicrackNDK](#05)
+
+
+
+
+
+<a name=01></a>
 ## Easy RE
 
 
@@ -12,7 +30,7 @@
 
 
 ![image](https://user-images.githubusercontent.com/77602549/171034525-228935b8-c0f0-4f3d-b1c6-669f176020d8.png)
-
+<a name=02></a>
 ## LoopAndLoop
 
 ![image](https://user-images.githubusercontent.com/77602549/171035225-5454473c-8897-4a02-8a01-26f16f7302de.png)
@@ -32,7 +50,7 @@ Ta đã có đủ điều kiện để rev thành 1 file  code solve.py nh
 
 ![image](https://user-images.githubusercontent.com/77602549/171037153-3ffa3f20-9c72-4f12-9de3-71d42b7caeae.png)
 
-
+<a name=03></a>
 ## Timer
 
 ![image](https://user-images.githubusercontent.com/77602549/171037459-45274a24-f2f0-4549-9a98-4873814f9928.png)
@@ -80,7 +98,7 @@ if-ltz v0, :cond_0
 
 
 ![image](https://user-images.githubusercontent.com/77602549/171144196-3faddb32-352b-422c-b4cf-a221b8321a9b.png)
-
+<a name=04></a>
 ## WantAShell
 
 ![image](https://user-images.githubusercontent.com/77602549/171144441-7563d46a-5f6b-43ed-a07d-30c987880fe7.png)
@@ -98,8 +116,8 @@ if-ltz v0, :cond_0
 ![image](https://user-images.githubusercontent.com/77602549/171217874-0bf69db2-ede2-4e4a-9407-f68f96906ac1.png)
 
 
-
-## 
+<a name=05></a>
+## mobicrackNDK
 
 ![image](https://user-images.githubusercontent.com/77602549/171229805-2ff6e6eb-e6bf-407d-8cc3-ae52115192b3.png)
 
@@ -114,7 +132,9 @@ if-ltz v0, :cond_0
 ![image](https://user-images.githubusercontent.com/77602549/171230304-8b073693-0cc4-4415-a66e-f7e670b3255b.png)
 
 
-key là QflMn`fH,ZHVW^7c 
+key là ```QflMn`fH,ZHVW^7c```
 
+![image](https://user-images.githubusercontent.com/77602549/171234042-ed6d6735-8b8f-4446-902b-8adeebfdfabf.png)
 
-
+![image](https://user-images.githubusercontent.com/77602549/171233944-9b62501d-6ebc-4d8a-b716-f0cafe6faa94.png)
+  
