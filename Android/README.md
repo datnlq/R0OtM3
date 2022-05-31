@@ -89,4 +89,32 @@ if-ltz v0, :cond_0
 ![image](https://user-images.githubusercontent.com/77602549/171144805-4b302b9e-f89a-40bf-89bd-60c7be9e8d17.png)
 
 
+![image](https://user-images.githubusercontent.com/77602549/171217668-a07a718e-cdf0-4df5-932c-139b40c53ff1.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/171217690-69fe2d6e-adfc-4a87-9b24-831e564d147f.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/171217874-0bf69db2-ede2-4e4a-9407-f68f96906ac1.png)
+
+
+
+## 
+
+![image](https://user-images.githubusercontent.com/77602549/171229805-2ff6e6eb-e6bf-407d-8cc3-ae52115192b3.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/171229901-7327a0e0-2e4f-4195-9fad-ba4ce8c11522.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/171229946-94d2b443-c28d-4983-8439-7191dcdcba2e.png)
+
+![image](https://user-images.githubusercontent.com/77602549/171230008-0c004f03-22ac-47aa-9486-98954be910ec.png)
+
+![image](https://user-images.githubusercontent.com/77602549/171230304-8b073693-0cc4-4415-a66e-f7e670b3255b.png)
+
+
+key là QflMn`fH,ZHVW^7c 
+
+
 
