@@ -51,18 +51,42 @@ Ta có thể thấy rằng flag được xác định bởi giá trị của k. 
 
 Giá trị của k là 1616384. Tuy nhiên ta cần biết biến k nằm ở đâu trong lúc complie và run apk để thay đổi nó. 
 
+Thay đổi giá trị của k thành hằng số, nghĩa là trong tệp smali được đề cập ở trên
+iget v3, v3 .... (bỏ qua);->k:I
+Thêm sau
+const v3, 1616384
+
+![image](https://user-images.githubusercontent.com/77602549/171141365-6de617e1-56e1-426d-b88f-886d66f6da32.png)
 
 
 Đảo ngược điều kiện của cờ đầu ra, nghĩa là, trong MainActivity $1.smali
 if-gtz v0, :cond_0
 Câu này (tiếp theo là bước nhảy để xuất ra The Flag Is) được thay đổi thành
 if-ltz v0, :cond_0
-Thay đổi giá trị của k thành hằng số, nghĩa là trong tệp smali được đề cập ở trên
-iget v3, v3 .... (bỏ qua);->k:I
-Thêm sau
-const v3, 1616384
 
 
+![image](https://user-images.githubusercontent.com/77602549/171141540-67c4e2e8-29aa-4ae1-9030-66ab40f99aab.png)
+
+
+
+![image](https://user-images.githubusercontent.com/77602549/171141687-13db268d-d15f-44e2-9c80-74391c8d79e1.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/171142215-da2ff46b-d6bf-4eec-aa4a-630c001d020e.png)
+
+![image](https://user-images.githubusercontent.com/77602549/171143258-a8bf817c-cfbb-4fd6-9374-ed12d3b0882d.png)
+![image](https://user-images.githubusercontent.com/77602549/171143299-b2dc41f8-ffaa-4f1a-aa39-bfc4961183b0.png)
+
+
+
+![image](https://user-images.githubusercontent.com/77602549/171144196-3faddb32-352b-422c-b4cf-a221b8321a9b.png)
+
+## WantAShell
+
+![image](https://user-images.githubusercontent.com/77602549/171144441-7563d46a-5f6b-43ed-a07d-30c987880fe7.png)
+
+
+![image](https://user-images.githubusercontent.com/77602549/171144805-4b302b9e-f89a-40bf-89bd-60c7be9e8d17.png)
 
 
 
